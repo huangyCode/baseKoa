@@ -1,0 +1,32 @@
+{
+  "name": "middle-service",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=\"test\" forever start run.js",
+    "start-prd": "cross-env NODE_ENV=\"production\" forever start run.js",
+    "stop": "forever stop run.js"
+  },
+  "dependencies": {
+    "@alicloud/sms-sdk": "^1.1.6",
+    "memory-cache": "^0.2.0",
+    "forever": "^0.15.3",
+    "jsonwebtoken": "^8.4.0",
+    "koa": "^2.6.2",
+    "koa-body": "^4.0.4",
+    "koa-convert": "^1.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^1.1.1",
+    "moment": "2.23.0",
+    "mysql2": "^1.6.1",
+    "request": "^2.88.0",
+    "runkoa": "^1.5.9",
+    "sequelize": "^4.42.0",
+    "xlsx": "^0.11.16",
+    "xlsx-style": "^0.8.13",
+    "koa2-cors": "^2.0.6",
+    "cross-env": "^5.2.0",
+    "ali-oss": "^6.1.0"
+  }
+}
